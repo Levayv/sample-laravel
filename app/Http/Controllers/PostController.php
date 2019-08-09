@@ -58,14 +58,16 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        $model = Post::query()->find($id);
-        if (!$model) {
-            return response()->json([
-                'message' => 'Post does not exist',
-                'status' => 'fail',
+//        $model = Post::query()->find($id);
+//        if (!$model) {
+//            return response()->json([
+//                'message' => 'Post does not exist',
+//                'status' => 'fail',
+//            ]);
+//        }
+        return response()->json([
+                'items' => 'Lorem ipsum',
             ]);
-        }
-        return $model;
     }
 
 

@@ -19,7 +19,6 @@ Route::group(['prefix' => 'post'], function() {
     Route::post('/', 'PostController@store');
     Route::put('{id}', 'PostController@update');
     Route::delete('{id}', 'PostController@destroy');
-
 });
 
 
